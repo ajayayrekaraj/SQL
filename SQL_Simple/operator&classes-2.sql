@@ -91,7 +91,7 @@ SELECT DISTINCT payment
 order by amount
 limit 1,2;
 -- error
-select distinct  payment
+select distinct payment
 from  amount 
 order by amount desc
 limit 1,2;
