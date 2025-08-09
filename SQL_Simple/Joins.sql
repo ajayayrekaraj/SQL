@@ -111,6 +111,89 @@ select * from table1
  inner join c_age
  on customer.cid=c_age.cid;
  
+ -- fetch the data of customers whose age is not available
  
+ select * from customer;
+ select * from c_age;
  
+ select c.cid,cname,age from customer as c
+ left join c_age as a
+ on c.cid=a.cid
+ where age is null;
  
+ use mavenmovies;
+ 
+ select * from actor;
+ select * from film_actor;
+ 
+select * from actor as a
+inner join film_actor as fa
+on a.actor_id=fa.actor_id;
+
+-- join 3 tables
+-- actor, film_actor and film table
+
+select * from actor;
+select * from film_actor;
+select * from film;
+
+select * from actor as a
+inner join film_actor as fa
+on a.actor_id=fa.actor_id
+inner join film as f
+on fa.film_id=f.film_id;
+
+ -- fetch the firstname and lastname of actors worked in movies statring with a
+ use mavenmovies;
+ select * from actor;
+ select * from film;
+
+ select first_name,last_name,title from actor as a
+ inner join film_actor as fa
+ on a.actor_id=fa.actor_id
+ inner join film as f
+ on fa.film_id = f.film_id
+ where title like 'A%';
+ 
+ -- display full name of actors for above query 
+ select concat(first_name,' ',last_name) from actor;
+ 
+ -- join customer table and payment table
+ 
+ select * from customer;
+ select * from payment;
+ 
+ select * from customer as a
+ inner join payment as p
+ on a.customer_id = p.customer_id;
+  
+ -- fetch the total amount paid by Mary smith
+ select sum(amount) from payment as p 
+ inner join customer as c
+ on p.customer_id=c.customer_id
+ where first_name= 'Mary' and last_name='smith';
+ 
+  use examples;
+  select * from city;
+  select * from country;
+  
+  -- display all the cities in india
+
+select city from country as c
+inner join city as ct
+on c.country_id=ct.country_id
+where country='India' and city like 'B%';
+
+use example1;
+select * from city;
+select * from country;
+select * from customer;
+
+-- display all the customers whose name starts with A and lives in india
+
+select first_name ,last_name  from customer as c
+inner join country as cn
+on c.customer_id=cn.customer_id;
+
+
+
