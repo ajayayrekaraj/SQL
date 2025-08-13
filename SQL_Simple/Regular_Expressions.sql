@@ -110,3 +110,10 @@ select * from film;
 
 select title,description from film
 where description regexp 'drama';
+
+-- regexp_replace
+
+select length("SQL");
+ 
+select regexp_replace ('capgemini office','office','Campus');
+
