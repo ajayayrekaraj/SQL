@@ -21,5 +21,43 @@ select * from employee /* Outer Query -Main Query*/
 where emp_sal> 
 (select avg(emp_sal) from employee); /* Inner query - Sub Query*/
 
+-- In sub queries the output of inner query will be given
+-- as input to the outer query
+-- Always we need to write sub query inside parenthesis only
 
+-- Types of sub queries
+-- single Row sub query / Scalar sub query
+-- Multi Row Sub Query
+-- Corelated sub query
+-- Non corelated sub query
 
+-- Single Row Sub Query - it returns a single value
+-- i.e it will always displays single row and single column
+
+use practise_sql;
+select * from employee;
+select * from employee /* Outer Query -Main Query*/
+where emp_sal> 
+(select avg(emp_sal) from employee); /* Inner query - Sub Query*/
+
+-- aggregate functions - sum,min,max,count,avg -single value only
+-- expressions which will display output as single values
+-- single valued operators - =,>,<,>=,<=,!=
+
+use mavenmovies;
+select * from payment;
+
+-- fetch the data of those transactions where amount paid is greater 
+-- than average of amount
+
+select amount from payment
+where amount > (select avg(amount) from payment);
+
+-- find the second highest amount 
+
+select amount from payment
+order by amount desc
+limit 1,1;
+
+select max(amount) from payment
+where amount<(select max(amount) from payment);
