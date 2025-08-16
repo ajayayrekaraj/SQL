@@ -61,3 +61,13 @@ limit 1,1;
 
 select max(amount) from payment
 where amount<(select max(amount) from payment);
+
+-- Multi Row Sub Query
+-- if the sub query returns the output as more than 1 or 
+-- if it returns multiple rows
+
+use practise_sql;
+select * from set2;
+alter table set2 add fees int;  
+insert into fees 
+values (12000),(15000),(16000);
