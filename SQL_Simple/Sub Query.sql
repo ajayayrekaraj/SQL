@@ -71,3 +71,11 @@ select * from set2;
 alter table set2 add fees int;  
 insert into fees 
 values (12000),(15000),(16000);
+
+-- Correlated sub query
+
+-- Non correlated sub query
+-- Inner query /sub query  will notbe related to the outer query
+-- If we execute query/sub query standalone we will get output
+
+
