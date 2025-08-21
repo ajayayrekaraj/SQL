@@ -78,5 +78,5 @@ values (12000),(15000),(16000);
 -- Inner query /sub query  will notbe related to the outer query
 -- If we execute query/sub query standalone we will get output
 
--- Next 
+-- 
 
