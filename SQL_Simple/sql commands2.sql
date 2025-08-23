@@ -58,7 +58,7 @@ drop- remove the complete table from the database
 truncate - it will just remove data inside table but structure 
             of table will remain same
 
-delete - used to delete the data inside the table
+delete - used to delete the data whole row
             
 */
 

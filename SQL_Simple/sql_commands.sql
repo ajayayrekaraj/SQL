@@ -2,6 +2,7 @@
 
 use practise_sql;
 # DDL- data defination langauge
+-- create , alter ,drop,truncate ,rename 
 
 create table EMP(emp_id int primary key,
 Emp_name varchar(40),emp_sal float);
