@@ -58,14 +58,13 @@ drop- remove the complete table from the database
 truncate - it will just remove data inside table but structure 
             of table will remain same
 
-delete - used to delete the data whole row
-            
+delete - used to delete the data whole row from database
 */
 
 # DCL - Data Control Langauge
 # Grant and revoke
 
-# DCL commands are udes by data admins
+# DCL commands are used by data admins
 
 # privilages - delete 
 
@@ -96,8 +95,8 @@ select * from College;
 /*
  Whenever we perform any of the DML command like - insert,delete or update
  these can be rollback if the data is not stored permanently
-  So to be on the safer side we will use commit command to save the 
-  data permanently
+ So to be on the safer side we will use commit command to save the 
+ data permanently
 */
 
 # savepoint 

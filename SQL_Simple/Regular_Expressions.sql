@@ -50,7 +50,7 @@ M% - starting with M and we can have any number of
  where title regexp 'AT|ES'; 
  
 -- [] - we can write multiple characters in it
--- if we write any data inside [] , i.e we are searing for 
+-- if we write any data inside [] , i.e we are searching for 
 -- any of the data present inside []
 -- same as in operator 
 

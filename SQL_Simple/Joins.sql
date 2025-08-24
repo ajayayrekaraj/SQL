@@ -143,7 +143,7 @@ on a.actor_id=fa.actor_id
 inner join film as f
 on fa.film_id=f.film_id;
 
- -- fetch the firstname and lastname of actors worked in movies statring with a
+ -- fetch the firstname and lastname of actors worked in movies starting with a
  use mavenmovies;
  select * from actor;
  select * from film;

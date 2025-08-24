@@ -10,7 +10,7 @@ select * from payment;
 -- Numeric functions
 -- count,sum,min,max, avg, round, ceiling, floor ,mod
 
--- count - count () function returns the number of recordsnreturn by a select query
+-- count - count () function returns the number of records in return by a select query
 select * from payment;
 select count(amount) from payment; 
 

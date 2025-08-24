@@ -3,7 +3,7 @@
 -- gender , score , location
 -- Aggregate functions - sum,min,max,count,avg,mod
 
--- Group bu cluase - used with aggregate functions like min(),max()
+-- Group by cluase - used with aggregate functions like min(),max()
 -- count(),avg() to summarize the data based on spefic table.
 
 use mavenmovies;

@@ -1,3 +1,8 @@
+# SQL - Structured Query Langauge
+# - Comment 
+# SQL is case insensitive - lcase and ucase
+# for activating the database - (use) keyword is used
+
 create Database Practise_SQL;
 use Practise_SQL;
 

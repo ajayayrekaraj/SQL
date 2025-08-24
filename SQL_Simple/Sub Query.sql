@@ -75,7 +75,7 @@ values (12000),(15000),(16000);
 -- Correlated sub query
 
 -- Non correlated sub query
--- Inner query /sub query  will notbe related to the outer query
+-- Inner query /sub query  will not be related to the outer query
 -- If we execute query/sub query standalone we will get output
 
 -- 
