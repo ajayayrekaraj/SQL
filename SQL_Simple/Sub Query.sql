@@ -72,11 +72,37 @@ alter table set2 add fees int;
 insert into fees 
 values (12000),(15000),(16000);
 
--- Correlated sub query
+select * from employee
+where salary IN
+(select salary from employees
+where department_id=2);
+
+select * from employees
+where department_id IN
+(select department_id from employees
+group by department_id
+having count(*)>1);
 
 -- Non correlated sub query
 -- Inner query /sub query  will not be related to the outer query
 -- If we execute query/sub query standalone we will get output
 
--- 
+-- Correlated sub queries
+-- Inner query/sub query will be dependent to the outer query
+-- i.e Inner query/sub query will be dependent on sub query
+-- If we execute Inner query/Sub query seperatly we will not get output
+
+use mavenmovies;
+-- fetch firstname and lastname of customers who 
+-- made atleast 30 transactions
+
+select first_name,last_name from customer as c
+where 30;
+
+select count(*) from payment as p
+where  c.customer_id=p.customer_id
+
+select * from customer;
+select * from payment;
+
 
