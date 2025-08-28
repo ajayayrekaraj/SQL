@@ -97,12 +97,13 @@ use mavenmovies;
 -- made atleast 30 transactions
 
 select first_name,last_name from customer as c
-where 30;
-
-select count(*) from payment as p
-where  c.customer_id=p.customer_id
+where 30<(select count(*) from payment as p
+where  c.customer_id=p.customer_id);
 
 select * from customer;
 select * from payment;
+
+-- sub queries we will face performance issues
+-- joins are better to use instead of sub queries
 
 
