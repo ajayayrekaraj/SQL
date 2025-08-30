@@ -36,3 +36,4 @@ drop view vfilm_pg;
 -- while creating views we use distinct,aggregate function,group by clause 
 use example1;
 
+
