@@ -31,3 +31,11 @@ from employee
 where department = 'IT')
 select name,salary from employees,Average_salary
 where salary > Average_salary.avg_salary;
+
+
+with DepartmentSalaries as(
+select department,sum(salary) as total_salary from employees
+group by department)
+select department,total_salary
+from DepartmentSalaries
+where total_salary >100000 ;
