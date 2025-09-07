@@ -26,4 +26,6 @@ select * from student;
 
 alter table student add id int;
 
+update student set id=1;
+
 
