@@ -53,3 +53,4 @@ end
 
 call sp_citycount('India',@cnt);
 select @cnt;
+
